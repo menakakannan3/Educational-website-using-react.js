@@ -1,0 +1,90 @@
+body{
+  background-color: #141819;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.menuTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.menuList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menuItem {
+  background-color: #5c9592;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 15px;
+  width: 300px; /* Adjust this width based on your design */
+  text-align: center;
+  padding: 10px;
+}
+
+.menuItem div {
+  background-size: cover;
+  background-position: center;
+  height: 200px; /* Adjust the height as needed */
+}
+
+.menuItem h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  
+}
+
+.menuItem p {
+  font-size: 1.2rem;
+  color: #333;
+}
+.menuItem button {
+ display: inline-block;
+ border-radius: 4px;
+ background-color: #3d405b;
+ border: none;
+ color: #FFFFFF;
+ text-align: center;
+ font-size: 17px;
+ padding: 16px;
+ width: 130px;
+ transition: all 0.5s;
+ cursor: pointer;
+ margin: 5px;
+}
+
+.menuItem button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+
+.menuItem button span:after {
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
+}
+
+.menuItem button:hover span {
+ padding-right: 15px;
+}
+
+.menuItem button:hover span:after {
+ opacity: 1;
+ right: 0;
+}
+.menuTitle{
+  color: #FFFFFF;
+}
